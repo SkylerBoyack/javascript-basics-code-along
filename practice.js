@@ -5,6 +5,8 @@
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
 // Code here
+let greeting = "Hi"; 
+let farewell = 'Goodbye'
 
 
 
@@ -15,7 +17,9 @@
 // Concatenate hello and userName together and store the result in a variable called salutation
 
 //Code here
-
+let hello = "Hello"
+let userName = "Skyler"
+let salutation = (hello + userName)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -23,7 +27,7 @@
 //Create a variable called seven that has a number data type with the value of 7
 
 //Code here
-
+let seven = 7
 
 
 //////////////////PROBLEM 4////////////////////
@@ -32,7 +36,7 @@
 // This datatype should be a number
 
 //Code here
-
+let money = 4000
 
 
 //////////////////PROBLEM 5////////////////////
@@ -40,7 +44,7 @@
 // Make a variable called awesome and give it a value of the boolean data type true
 
 //Code here
-
+let awesome = true
 
 
 //////////////////PROBLEM 6////////////////////
@@ -53,7 +57,7 @@ let myCar = "Jeep";
 // Set the variable myCar to be null
 
 
-//Code here
+myCar = null
 
 
 
@@ -62,7 +66,32 @@ let myCar = "Jeep";
 // Create a variable called users which should be an array with 4 items in it
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
-//Code here
+let ty = {
+  "name": "ty",
+  "age": 1,
+  "height": 6.0,
+}
+let skyler = {
+  "name": "skyler",
+  "age": 2,
+  "height":5.8
+}
+let kyle = {
+  "name": "kyle",
+  "age": 1,
+  "height": 5.5
+}
+
+
+let jordan = {
+  "name": "jordan",
+  "age": 2,
+  "height": 6.1
+}
+
+
+let users = [ty, skyler, kyle , jordan]
+
 
 
 
@@ -73,7 +102,27 @@ let myCar = "Jeep";
 // Each property will have a corresponding value which will be an object with one property called "hobbies"
 // Each hobbies property will have a corresponding value which will be an object
 
-//Code here
+let ry ={ 
+"hobbies":"fun"
+}
+
+let sam ={
+"hobbies":"fun"
+}
+
+let corey={
+"hobbies":"fun"
+}
+
+let x = {
+"C":1,
+"D":2,
+"E":3,}
+let hobbies = "x"
+let all = "hobbies"
+let family = [corey, sam, ry]
+
+
 
 
 
@@ -81,8 +130,10 @@ let myCar = "Jeep";
 
 // Create a variable called gameScores which should be an array with 3 items in it
 // Each item should be an array with 2 items (numbers) in each array
-
-//Code here
+let zelda = [1,2]
+let halo = [1,2]
+let csgo = [1,2]
+let gameScores = [zelda,halo,csgo]
 
 
 
@@ -90,8 +141,23 @@ let myCar = "Jeep";
 
 // Create a variable called people which should be an array of 3 objects
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
+let bob = {
+  "name": "bob",
+  "gender":"male",
+  "height": 6.0,
+}
+let tom = {
+  "name": "tom",
+  "gender":"male",
+  "height":5.8
+}
+let cam = {
+  "name": "cam",
+  "gender":"male",
+  "height": 5.5
+}
 
-//Code here
+let people = [tom,bob,cam]
 
 
 
@@ -100,8 +166,13 @@ let myCar = "Jeep";
 // Create a variable called cowboy which should be an object
 // This object should have 3 properties: name (string), state (string), favoriteCountrySong (string)
 
-//Code here
+let cowboy= {
+  "name":"kid",
+  "state":"texas",
+  "favoriteCountrySong": "american kids"
+}
 
+let horse = "cowboy"
 
 
 //////////////////PROBLEM 12////////////////////
@@ -129,8 +200,11 @@ function launch() {
 //   the object spaceship (provided for you)
 //   the function launch (provided for you)
 
+let string = "meaning"
+let array =[1,2,3,4,5]
+let test = true
 
-//Code here
+let dataTypes= [42,string,test,array,spaceship,launch]
 
 
 
@@ -139,7 +213,7 @@ function launch() {
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1 + num2
 };
   
 
@@ -148,14 +222,15 @@ function sum(num1, num2){
   
 // Create two variables number1 and number2 and assign them number values
 
-// Code here
+let number1 = 1
+let number2 = 2
 
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
-
 function multiply() {
-  return // Code here
+  return 1 * 2 
 };
+
 
 
 
@@ -169,10 +244,9 @@ let food = 'pizza';
 // Edit the function favFood so that when it is invoked it returns the string "My favorite food is pizza"
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
-function favFood(){
-  return // Code here
+function favFood(){ 
+ return "My favorite food is " + food
 };
-
 
 
 //////////////////PROBLEM 16////////////////////
@@ -186,8 +260,9 @@ let theBoss;
 // Edit the function assignName so that when it is invoked with the variable theName passed in as an argument,
 // the function assigns the value of theName to theBoss variable
 
-function assignName(name){
-  // Code here
+function assignName(theName){
+  return theName["Jermany"]
+ 
 };
 
 
@@ -207,9 +282,8 @@ let user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj){
-  return // Code here
-};
-
+  return user.name
+  };
 
 
 //////////////////PROBLEM 18////////////////////
@@ -229,7 +303,7 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return  calendar.weekDays[2]
 }
 
 
@@ -237,9 +311,11 @@ function getWeekDay(calendar){
 //////////////////PROBLEM 19////////////////////
 
 // Create a function called "fn" that takes in a parameter and returns that parameter
+function fn(me){
+  
+  returns.me
 
-// Code here
-
+}
 
 
 //////////////////PROBLEM 20////////////////////
@@ -253,7 +329,11 @@ let lastName = "Jones";
 // Create a function called createName that takes in no parameters and returns the result of concatenating firstName and lastName (provided)
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
-// Code here
+function createName(){
+  let me = `${firstName} ${lastName}` 
+  return me
+
+}
 
 
 
@@ -261,7 +341,11 @@ let lastName = "Jones";
 
 // Create a function called showMeSeven that returns the number 7
 
-// Code here
+function showMeSeven(){
+  let num = 7
+    return num
+
+}
 
 
 
@@ -269,7 +353,10 @@ let lastName = "Jones";
 
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
-// Code here
+function multiplier(two,four){
+  let eight = 8 
+  return 8
+}
 
 
 
@@ -278,8 +365,12 @@ let lastName = "Jones";
 // Create a function called sayHello that takes two parameters: a greeting (string) and a name (string)
 // This function should return a string that is the result of concatenating the greeting and name parameters
 // The returned value should include a space between the greeting and name parameters
-
-// Code here
+  
+  let sayHello= function(greeting, Sky){
+    let say = `${greeting} ${sky}`
+    return say
+  }
+  
 
 
 
@@ -290,7 +381,10 @@ let lastName = "Jones";
   // the first property should be exerciseName with the value of the first parameter
   // the second property should be duration with the value of the second parameter
 
-// Code here
+function makeExercise(exerciseName,duration){
+
+
+}
 
 
 
@@ -306,7 +400,8 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough(){
-  // Code here
+  if(age>=21){return "old enough"}
+  else if(age<=21){return "not yet"}
 };
 
 
@@ -322,8 +417,9 @@ let workEthic = "TBD";
 // Use the if and else keywords in your solution
 // The variable workEthic will be changed during testing
 
-function successPredictor(){
-  // Code here
+function successPredictor(great){
+  if(workEthic === great){return "success at Devmountain"}
+  else if(workEthic == great){return "failure atDevmountain"}
 };
 
 
@@ -339,8 +435,9 @@ let cookieType = "TBD";
 // Use the if and else keywords in your solution
 // The variable cookieType will be changed during testing
 
-function eatOrTrash(){
-  // Code here
+function eatOrTrash(raisin){
+  if(cookieType===raisin){return "throw in trash"}
+  else if(cookieType==raisin){return "eat"}
 };
 
 
